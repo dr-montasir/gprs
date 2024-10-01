@@ -1,0 +1,22 @@
+[package]
+name = "gprs"
+version = "0.0.0"
+authors = ["Montasir Mirghani <contact@montasir.me>"]
+edition = "2021"
+description = "GPRS"
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/dr-montasir/gprs"
+repository = "https://github.com/dr-montasir/gprs"
+readme = "README.md"
+keywords = ["async", "runtime", "template"]
+categories = ["web-programming", "network-programming", "api-bindings"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["full"] }
+
+[lib]
+name = "gprs"
+path = "src/lib.rs"
+
