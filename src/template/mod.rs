@@ -1,3 +1,3 @@
-pub fn t(t: &str) -> String {
-    t.to_string()
-}
+pub mod html;
+pub mod rules;
+pub mod text;
