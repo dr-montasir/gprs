@@ -1,6 +1,6 @@
 [package]
 name = "gprs"
-version = "0.0.0"
+version = "0.1.0"
 authors = ["Montasir Mirghani <contact@montasir.me>"]
 edition = "2021"
 description = "GPRS"
@@ -8,12 +8,15 @@ license = "MIT OR Apache-2.0"
 homepage = "https://github.com/dr-montasir/gprs"
 repository = "https://github.com/dr-montasir/gprs"
 readme = "README.md"
-keywords = ["async", "runtime", "template"]
-categories = ["web-programming", "network-programming", "api-bindings"]
+keywords = ["runtime", "async", "await", "task", "template"]
+categories = ["asynchronous", "concurrency", "network-programming", "parser-implementations", "template-engine"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+async-std = "1.13.0"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
 tokio = { version = "1.40.0", features = ["full"] }
 
 [lib]
