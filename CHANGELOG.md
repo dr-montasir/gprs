@@ -1,3 +1,7 @@
+### v0.3.5
+
+- Added items to the set_mime_types function
+
 ### v0.3.0
 
 - Added mime module

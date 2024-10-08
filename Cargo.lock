@@ -306,7 +306,7 @@ dependencies = [
 
 [[package]]
 name = "gprs"
-version = "0.3.0"
+version = "0.3.5"
 dependencies = [
  "async-std",
  "serde",
