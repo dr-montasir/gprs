@@ -1,3 +1,10 @@
+### v0.4.0
+
+- Added do_text function
+- Deleted text module
+- Deleted (bin file) main.rs
+- Improved documentation
+
 ### v0.3.5
 
 - Added items to the set_mime_types function

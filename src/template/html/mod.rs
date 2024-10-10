@@ -43,3 +43,74 @@ pub fn do_forloop<T: std::fmt::Display>(
         .join("");
     format!("{}{}{}", befor_items, items, after_items)
 }
+
+/// ### do_text(t)
+///
+/// Text Conversion Function
+///
+/// The `do_text` function takes a string slice representing a text and converts it
+/// into an owned `String`. This function is typically used for text elements,
+/// including titles and other content that are incorporated into HTML templates,
+/// ensuring proper ownership and allocation of string data.
+///
+/// ### Parameters
+/// - `t`: A string slice (`&str`) representing the text to be used in
+///   HTML templates.
+///
+/// ### Examples
+/// ```rust
+/// use gprs::template::html::do_text;
+///
+/// let title = "Home";
+/// let result = do_text(title);
+/// assert_eq!(result, "Home");
+///
+/// let color = do_text("#000");
+/// assert_eq!(color, "#000");
+/// ```
+///
+/// ### Usage Context
+/// This function is particularly useful in the context of generating dynamic HTML
+/// pages where text elements, such as titles, may need to be included as part
+/// of an HTML document or template. For instance, it is used in the `do_home_page`
+/// function to set the title in the `HOME_TEMPLATE` HTML document:
+/// ```rust
+/// use gprs::template::html::{do_html, do_text};
+///
+/// pub const HEAD: &str = r#"<head>
+/// <meta charset="UTF-8">
+///     <title>{{page_title}} Page</title>
+/// </head>"#;
+///
+/// pub const HOME_TEMPLATE: &str = r#"<!DOCTYPE html>
+/// <html>
+///   {{HEAD}}
+///   <body>
+///      Home Page
+///   </body>
+/// </html>"#;
+///
+/// pub fn do_home_page() -> String {
+///     do_html!(HOME_TEMPLATE, HEAD = HEAD, page_title = do_text("Home"))
+/// }
+///
+/// pub const ABOUT_TEMPLATE: &str = r#"<!DOCTYPE html>
+/// <html>
+///   {{HEAD}}
+///   <body>
+///      About Page
+///   </body>
+/// </html>"#;
+///
+/// pub fn do_about_page() -> String {
+///     do_html!(ABOUT_TEMPLATE, HEAD = HEAD, page_title = do_text("About"))
+/// }
+/// ```
+///
+/// This ensures that the text is properly formatted and owned, allowing for
+/// efficient rendering and manipulation in templates.
+///
+/// <small>End Fun Doc</small>
+pub fn do_text(t: &str) -> String {
+    t.to_string()
+}

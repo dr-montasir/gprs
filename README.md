@@ -6,10 +6,9 @@
 
 ```rust
 use gprs::asyncore::task;
-use gprs::do_html;
+// use gprs::do_html;
 use gprs::http::status_map;
-use gprs::template::html::do_forloop;
-use gprs::template::text::t;
+use gprs::template::html::{do_forloop, do_html, do_text};
 use std::time::Duration;
 
 async fn print_numbers(from: i32, to: i32) {
@@ -20,17 +19,47 @@ async fn print_numbers(from: i32, to: i32) {
     }
 }
 
+pub const HEAD: &str = r#"<head>
+<meta charset="UTF-8">
+    <title>{{page_title}} Page</title>
+</head>"#;
+
+pub const HOME_TEMPLATE: &str = r#"<!DOCTYPE html>
+<html>
+  {{HEAD}}
+  <body>
+     Home Page
+  </body>
+</html>"#;
+
+pub fn do_home_page() -> String {
+    do_html!(HOME_TEMPLATE, HEAD = HEAD, page_title = do_text("Home"))
+}
+
+pub const ABOUT_TEMPLATE: &str = r#"<!DOCTYPE html>
+<html>
+  {{HEAD}}
+  <body>
+     About Page
+  </body>
+</html>"#;
+
+pub fn do_about_page() -> String {
+    do_html!(ABOUT_TEMPLATE, HEAD = HEAD, page_title = do_text("About"))
+}
+
 #[gprs::main]
 async fn main() {
     let task_1 = task::spawn(print_numbers(-3, 0));
     task::block_on(task_1);
 
-    println!("{}", t(r#"Hello, World!"#));
+    println!("{}", do_text(r#"Hello, World!"#));
 
     let status_code = 200;
     let message = status_map(status_code);
 
     println!("Status Code: {}, Message: {}", status_code, message);
+
     let html_template = r#"
     <!DOCTYPE html>
     <html>
@@ -74,7 +103,7 @@ async fn main() {
 
     let html_to_string = do_html!(
         html_template,
-        page_title = "Home Page",
+        page_title = do_text("Home Page"),
         hello = "Hello",
         world = world,
         component_if = component_if,
@@ -83,7 +112,11 @@ async fn main() {
         forloop_float_ol = forloop_float_ol
     );
 
+    println!("{}", do_home_page());
+
     println!("{}", html_to_string);
+
+    println!("{}", do_about_page());
 
     let task_2 = task::spawn(print_numbers(1, 4));
     task::block_on(task_2);
@@ -98,6 +131,16 @@ async fn main() {
 1
 Hello, World!
 Status Code: 200, Message: OK
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+  <body>
+     Home Page
+  </body>
+</html>
 
     <!DOCTYPE html>
     <html>
@@ -115,6 +158,16 @@ Status Code: 200, Message: OK
         <div><ol style='list-style: square;'><li>1</li><li>2</li><li>3</li></ol><div>
     </html>
 
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="UTF-8">
+    <title>About Page</title>
+</head>
+  <body>
+     About Page
+  </body>
+</html>
 1
 2
 3
