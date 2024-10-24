@@ -1,9 +1,9 @@
 [package]
 name = "gprs"
-version = "0.4.0"
+version = "0.5.0"
 authors = ["Montasir Mirghani <contact@montasir.me>"]
 edition = "2021"
-description = "GPRS"
+description = "A set of filtered and optimized Rust libraries creates a foundation for building modern web frameworks"
 license = "MIT OR Apache-2.0"
 homepage = "https://github.com/dr-montasir/gprs"
 repository = "https://github.com/dr-montasir/gprs"
@@ -15,6 +15,7 @@ categories = ["asynchronous", "concurrency", "network-programming", "parser-impl
 
 [dependencies]
 async-std = "1.13.0"
+cans = "0.4.0"
 serde = { version = "1.0.210", features = ["derive"] }
 serde_json = "1.0.128"
 tokio = { version = "1.40.0", features = ["full"] }

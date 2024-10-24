@@ -1,3 +1,9 @@
+### v0.5.0
+
+- Added cans crate (modules: html, json, mime, rules)
+- Deleted template module
+- Deleted mime module
+
 ### v0.4.0
 
 - Added do_text function

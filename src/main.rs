@@ -1,10 +1,3 @@
-# GPRS
-
----
-
-### Usage
-
-```rust
 use gprs::asyncore::task;
 // use gprs::cans::do_html;
 use gprs::cans::html::{do_forloop, do_html, do_text};
@@ -121,54 +114,3 @@ async fn main() {
     let task_2 = task::spawn(print_numbers(1, 4));
     task::block_on(task_2);
 }
-```
-
-### Result
-
-```shell
-3
-2
-1
-Hello, World!
-Status Code: 200, Message: OK
-<!DOCTYPE html>
-<html>
-  <head>
-<meta charset="UTF-8">
-    <title>Home Page</title>
-</head>
-  <body>
-     Home Page
-  </body>
-</html>
-
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>GPRS | Home Page</title>
-        </head>
-        <ol>
-        </ol>
-        <h1>👋 Hello, World!</h1>
-        <p>
-            <a href="#"><i>x ≠ 1 & x  ≠ 2. The 'x' value is ( 3 )</i></a>
-        </p>
-        <div>123<div>
-        <div><ol style='list-style: square;'><li>1</li><li>2</li><li>3</li></ol><div>
-    </html>
-
-<!DOCTYPE html>
-<html>
-  <head>
-<meta charset="UTF-8">
-    <title>About Page</title>
-</head>
-  <body>
-     About Page
-  </body>
-</html>
-1
-2
-3
-```
