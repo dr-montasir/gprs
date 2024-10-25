@@ -8,7 +8,7 @@
 use gprs::asyncore::task;
 // use gprs::cans::do_html;
 use gprs::cans::html::{do_forloop, do_html, do_text};
-use gprs::http::status_map;
+use gprs::ghttp::status::status_map;
 use std::time::Duration;
 
 async fn print_numbers(from: i32, to: i32) {

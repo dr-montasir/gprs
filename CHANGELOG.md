@@ -1,3 +1,9 @@
+### v0.6.0
+
+- Added asyncore crate (crate: async_std)
+- Added ghttp crate (module: status, crates: http)
+- Deleted http module (http -> status)
+
 ### v0.5.0
 
 - Added cans crate (modules: html, json, mime, rules)
