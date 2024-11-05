@@ -1,3 +1,11 @@
+### v0.7.0
+
+- Updated the cans crate (v0.4.0 => v0.5.0)
+- Added the chief crate (v0.5.0)
+- Added the wtime crate (v0.6.0)
+- Added the mathlab crate (v1.2.0, module: math)
+- Improved the documentation
+
 ### v0.6.0
 
 - Added asyncore crate (crate: async_std)
@@ -47,7 +55,6 @@
 
 - Added asyncore module
 - Added parser module
-- Initialized i18n module
 
 ### v0.0.0
 

@@ -1,8 +1,47 @@
+<div style="text-align: center;">
+  <a href="https://crates.io/crates/gprs"><img src="logo.svg" alt="LOGO" /></a>
+</div>
+
+<div style="text-align: center;">
+  <a href="https://github.com/dr-montasir/gprs"><img src="https://img.shields.io/badge/github-dr%20montasir%20/%20gprs-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="24" style="margin-top: 10px;" alt="github" /></a> <a href="https://crates.io/crates/gprs"><img src="https://img.shields.io/crates/v/gprs.svg?style=for-the-badge&color=fc8d62&logo=rust" height="24" style="margin-top: 10px;" alt="crates.io"></a> <a href="https://docs.rs/gprs"><img src="https://img.shields.io/badge/docs.rs-gprs-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="24" style="margin-top: 10px;" alt="docs.rs"></a> <a href="https://choosealicense.com/licenses/apache-2.0"><img src="https://img.shields.io/badge/license-apache_2.0-4a98f7.svg?style=for-the-badge&labelColor=555555&logo=apache" height="24" style="margin-top: 10px;" alt="license"></a> <a href="https://choosealicense.com/licenses/mit"><img src="https://img.shields.io/badge/license-mit-4a98f7.svg?style=for-the-badge&labelColor=555555" height="24" style="margin-top: 10px;" alt="license"></a>
+</div>
+
 # GPRS
+
+**GPRS** provides a curated selection of optimized Rust libraries as a modular foundation for modern web frameworks. Each crate acts as a distinct module, enabling seamless integration and customization. With version control on each crate, developers gain greater stability and flexibility, enhancing maintainability and scalability while harnessing Rust's power for high-performance web applications.
 
 ---
 
-### Usage
+## Table of Contents
+
+- [Installation](#installation)
+- [Changelog](#changelog)
+- [Usage](#usage)
+- [Documentation](#documentation)
+- [License](#license)
+- [Contributing](#contributing)
+- [Author](#author)
+
+## Installation
+
+**Run the following Cargo command in your project directory:**
+
+```terminal
+cargo add gprs
+```
+
+**Or add `gprs` to your `Cargo.toml` file:**
+
+```toml
+[dependencies]
+gprs = "MAJOR.MINOR.PATCH" # Replace with the latest version
+```
+
+## Changelog
+
+[![github](https://img.shields.io/badge/github-%20changelog-8da0cb?style=for-the-badge&labelColor=555555&logo=github)](https://github.com/dr-montasir/gprs/blob/main/CHANGELOG.md)
+
+## Usage
 
 ```rust
 use gprs::asyncore::task;
@@ -172,3 +211,32 @@ Status Code: 200, Message: OK
 2
 3
 ```
+
+## Documentation
+
+- [asyncore crate docs](https://docs.rs/asyncore/latest/asyncore)
+- [cans crate](https://crates.io/crates/cans)
+- [chief crate](https://crates.io/crates/chief)
+- [ghttp crate docs](https://docs.rs/ghttp/latest/ghttp)
+- [mathlab crate (math module)](https://crates.io/crates/mathlab)
+- [parser module: serde crate](https://crates.io/crates/serde)
+- [parser module: serde_json crate](https://crates.io/crates/serde_json)
+- [runtime module: tokio crate](https://crates.io/crates/tokio)
+- [wtime crate](https://crates.io/crates/wtime)
+
+## License
+
+This project is licensed under either of the following licenses:
+
+- MIT License
+- Apache License, Version 2.0
+
+You may choose either license for your purposes.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any feature requests or bug reports.
+
+## Author
+
+[Dr. Montasir Mirghani](https://github.com/dr-montasir)

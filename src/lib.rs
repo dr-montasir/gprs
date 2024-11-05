@@ -1,3 +1,8 @@
+#![doc(
+    html_logo_url = "https://github.com/dr-montasir/gprs/raw/HEAD/logo.svg?sanitize=true",
+    html_root_url = "https://docs.rs/gprs/latest/gprs"
+)]
+
 /// ### asyncore crate
 /// Asyncore
 /// ### version
@@ -25,6 +30,31 @@ pub mod asyncore;
 /// - [on github.com](https://github.com/dr-montasir/cans)
 pub mod cans;
 
+/// ### chief crate
+/// Chief Development Tools provides versatile functionalities for managing web applications.
+/// Depending on your requirements, you can choose between different installation methods.
+/// Whether you want to utilize the command-line interface (CLI) for seamless application management
+/// or integrate logging and environment variable handling into your project,
+/// Chief offers flexible options tailored to your development needs.
+/// This empowers developers to enhance their workflow and streamline application processes efficiently.
+/// ### version
+/// 0.5.0
+/// ### Crates
+/// - log
+/// - simplelog
+/// ### Modules
+/// - env
+/// ### Macros
+/// - env
+/// ### Functions
+/// - chief_cli
+/// - dotenv
+/// ### Links
+/// - [chief](https://crates.io/crates/chief)
+/// - [documentation](https://docs.rs/chief/latest/chief)
+/// - [on github.com](https://github.com/dr-montasir/chief)
+pub mod chief;
+
 /// ### ghttp crate
 /// GHTTP (Global HTTP)
 /// ### version
@@ -38,9 +68,36 @@ pub mod cans;
 /// - [on github.com](https://github.com/dr-montasir/ghttp)
 pub mod ghttp;
 
+/// ### mathlab crate (math module)
+/// A Powerful Math Library for Rust
+/// ### version
+/// 1.2.0
+/// ### Modules
+/// - math
+/// ### Links
+/// - [mathlab](https://crates.io/crates/mathlab)
+/// - [documentation](https://docs.rs/mathlab/latest/mathlab)
+/// - [on github.com](https://github.com/dr-montasir/mathlab)
+pub mod math;
+
 /// ### Parser Module
 pub mod parser;
 
 /// ### Runtime Module
 pub mod runtime;
 pub use runtime::*;
+
+/// ### wtime crate
+/// WTIME provides a variety of functions for obtaining the current UTC and local times, as well as generating customizable timestamps to suit your needs.
+/// ### version
+/// 0.6.0
+/// ### Modules
+/// - calc
+/// - local
+/// - tz
+/// - utc
+/// ### Links
+/// - [wtime](https://crates.io/crates/wtime)
+/// - [documentation](https://docs.rs/wtime/latest/wtime)
+/// - [on github.com](https://github.com/dr-montasir/wtime)
+pub mod wtime;
