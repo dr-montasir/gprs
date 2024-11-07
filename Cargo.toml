@@ -1,6 +1,6 @@
 [package]
 name = "gprs"
-version = "0.7.0"
+version = "0.8.0"
 authors = ["Montasir Mirghani <contact@montasir.me>"]
 edition = "2021"
 description = "A set of filtered and optimized Rust libraries creates a foundation for building modern web frameworks"
@@ -19,6 +19,7 @@ cans = "0.5.0"
 chief = "0.5.0"
 ghttp = "0.1.0"
 mathlab = "1.2.0"
+regexy = "0.2.0"
 serde = { version = "1.0.210", features = ["derive"] }
 serde_json = "1.0.128"
 tokio = { version = "1.41.0", features = ["full"] }

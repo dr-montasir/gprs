@@ -87,6 +87,23 @@ pub mod parser;
 pub mod runtime;
 pub use runtime::*;
 
+/// ### regexy crate
+/// **REGEXY** provides a simple and lightweight Rust library for working with regular expressions.
+/// The `regexy` crate provides an easy-to-use interface for matching patterns in strings using regex.
+/// ### version
+/// 0.2.0
+/// ### Crates
+/// - regex
+/// ### Modules
+/// - utils (regexy::utils)
+/// ### Functions
+/// - is_match
+/// ### Links
+/// - [regexy](https://crates.io/crates/regexy)
+/// - [documentation](https://docs.rs/regexy/latest/regexy)
+/// - [on github.com](https://github.com/dr-montasir/regexy)
+pub mod regexy;
+
 /// ### wtime crate
 /// WTIME provides a variety of functions for obtaining the current UTC and local times, as well as generating customizable timestamps to suit your needs.
 /// ### version

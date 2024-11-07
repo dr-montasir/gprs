@@ -1,3 +1,7 @@
+### v0.8.0
+
+- Added the regexy crate (v0.2.0)
+
 ### v0.7.0
 
 - Updated the cans crate (v0.4.0 => v0.5.0)
