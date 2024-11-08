@@ -1,3 +1,7 @@
+### v0.9.0
+
+- Added the futures crate (v0.3.31)
+
 ### v0.8.0
 
 - Added the regexy crate (v0.2.0)

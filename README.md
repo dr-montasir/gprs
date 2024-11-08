@@ -217,6 +217,7 @@ Status Code: 200, Message: OK
 - [asyncore crate docs](https://docs.rs/asyncore/latest/asyncore)
 - [cans crate](https://crates.io/crates/cans)
 - [chief crate](https://crates.io/crates/chief)
+- [futures module: futures crate](https://crates.io/crates/futures)
 - [ghttp crate docs](https://docs.rs/ghttp/latest/ghttp)
 - [mathlab crate (math module)](https://crates.io/crates/mathlab)
 - [parser module: serde crate](https://crates.io/crates/serde)

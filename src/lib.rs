@@ -55,6 +55,9 @@ pub mod cans;
 /// - [on github.com](https://github.com/dr-montasir/chief)
 pub mod chief;
 
+/// ### Futures Module
+pub mod futures;
+
 /// ### ghttp crate
 /// GHTTP (Global HTTP)
 /// ### version
