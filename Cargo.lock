@@ -272,9 +272,9 @@ checksum = "428d9aa8fbc0670b7b8d6030a7fadd0f86151cae55e4dbbece15f3780a3dfaf3"
 
 [[package]]
 name = "cans"
-version = "0.5.0"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "00c1aca9816355136323593263a4f5385173d8d371a371255711969b5ee2fb7e"
+checksum = "3d15367e60d7a7b857053fe21df73af908eb86f67e8c2ad8902d09ea4c901c0b"
 
 [[package]]
 name = "cc"
@@ -579,7 +579,7 @@ dependencies = [
 
 [[package]]
 name = "gprs"
-version = "0.9.0"
+version = "1.0.0"
 dependencies = [
  "asyncore",
  "cans",
@@ -588,8 +588,6 @@ dependencies = [
  "ghttp",
  "mathlab",
  "regexy",
- "serde",
- "serde_json",
  "tokio",
  "wtime",
 ]
@@ -937,12 +935,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ryu"
-version = "1.0.18"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f3cb5ba0dc43242ce17de99c180e96db90b235b8a9fdc9543c96d2209116bd9f"
-
-[[package]]
 name = "scopeguard"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -966,18 +958,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
-]
-
-[[package]]
-name = "serde_json"
-version = "1.0.128"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ff5456707a1de34e7e37f2a6fd3d3f808c318259cbd01ab6377795054b483d8"
-dependencies = [
- "itoa",
- "memchr",
- "ryu",
- "serde",
 ]
 
 [[package]]

@@ -220,8 +220,6 @@ Status Code: 200, Message: OK
 - [futures module: futures crate](https://crates.io/crates/futures)
 - [ghttp crate docs](https://docs.rs/ghttp/latest/ghttp)
 - [mathlab crate (math module)](https://crates.io/crates/mathlab)
-- [parser module: serde crate](https://crates.io/crates/serde)
-- [parser module: serde_json crate](https://crates.io/crates/serde_json)
 - [regexy crate](https://crates.io/crates/regexy)
 - [runtime module: tokio crate](https://crates.io/crates/tokio)
 - [wtime crate](https://crates.io/crates/wtime)

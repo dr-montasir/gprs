@@ -1,3 +1,9 @@
+### v1.0.0
+
+- Removed the parser module
+- Updated the cans crate (v0.5.0 -> v0.6.0)
+- Optimized the gprs crate
+
 ### v0.9.0
 
 - Added the futures crate (v0.3.31)

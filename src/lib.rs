@@ -16,12 +16,11 @@
 pub mod asyncore;
 
 /// ### cans crate
-/// An Elegant Rust-based Literal Template Engine
+/// An elegant and lightweight Rust-based literal template engine
 /// ### version
-/// 0.4.0
+/// 0.6.0
 /// ### Modules
 /// - html
-/// - json
 /// - mime
 /// - rules
 /// ### Links
@@ -82,9 +81,6 @@ pub mod ghttp;
 /// - [documentation](https://docs.rs/mathlab/latest/mathlab)
 /// - [on github.com](https://github.com/dr-montasir/mathlab)
 pub mod math;
-
-/// ### Parser Module
-pub mod parser;
 
 /// ### Runtime Module
 pub mod runtime;
