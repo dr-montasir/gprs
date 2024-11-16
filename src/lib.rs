@@ -60,9 +60,10 @@ pub mod futures;
 /// ### ghttp crate
 /// GHTTP (Global HTTP)
 /// ### version
-/// 0.1.0
+/// 0.2.0
 /// ### Modules
 /// - http (crate)
+/// - url (crate)
 /// - status (module)
 /// ### Links
 /// - [ghttp](https://crates.io/crates/ghttp)

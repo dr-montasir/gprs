@@ -1,3 +1,7 @@
+### v1.0.1
+
+- Updated the ghttp crate (v0.1.0 -> v0.2.0)
+
 ### v1.0.0
 
 - Removed the parser module
