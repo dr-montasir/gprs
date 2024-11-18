@@ -18,11 +18,12 @@ pub mod asyncore;
 /// ### cans crate
 /// An elegant and lightweight Rust-based literal template engine
 /// ### version
-/// 0.6.0
+/// 0.8.0
 /// ### Modules
 /// - html
 /// - mime
 /// - rules
+/// - world
 /// ### Links
 /// - [cans](https://crates.io/crates/cans)
 /// - [documentation](https://docs.rs/cans/latest/cans)
