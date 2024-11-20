@@ -1,3 +1,7 @@
+### v1.1.0
+
+- Updated the cans crate (v0.8.0 -> v1.0.0)
+
 ### v1.0.2
 
 - Updated the cans crate (v0.6.0 -> v0.8.0)

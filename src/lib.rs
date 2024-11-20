@@ -16,9 +16,11 @@
 pub mod asyncore;
 
 /// ### cans crate
-/// An elegant and lightweight Rust-based literal template engine
+/// An elegant and lightweight Rust-based literal template engine for managing web content,
+/// enhanced with a world module for streamlined regional and city information,
+/// as well as robust MIME type management.
 /// ### version
-/// 0.8.0
+/// 1.0.0
 /// ### Modules
 /// - html
 /// - mime

@@ -1,6 +1,6 @@
 [package]
 name = "gprs"
-version = "1.0.2"
+version = "1.1.0"
 authors = ["Montasir Mirghani <contact@montasir.me>"]
 edition = "2021"
 description = "A set of filtered and optimized Rust libraries creates a foundation for building modern web frameworks"
@@ -15,7 +15,7 @@ categories = ["asynchronous", "concurrency", "network-programming", "parser-impl
 
 [dependencies]
 asyncore = "0.2.0"
-cans = "0.8.0"
+cans = "1.0.0"
 chief = "0.5.0"
 futures = "0.3.31"
 ghttp = "0.2.0"
